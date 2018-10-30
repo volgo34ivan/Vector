@@ -1,0 +1,146 @@
+<resources>
+    <string name="AppName">Calculateur de vecteur</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7928726493812110/9219867188</string>
+    <string name="test_banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="answer_window_faq">Entrez l\'expression.</string>
+    <string name="answer_window_faq_memory">La mémoire est vide.</string>
+    <string name="answer_window_error">Les paramètres ne sont pas corrects!</string>
+    <string name="history_title">HISTOIRE</string>
+    <string name="history_answer">answer</string>
+    <string name="history_input">input</string>
+    <string name="history_date">date</string>
+    <string name="idString">idString</string>
+    <string name="idInteger">idInteger</string>
+    <string name="clear_historyTitle">Tout effacer.</string>
+
+    <string name="msg1">Addition / soustraction.</string>
+    <string name="msg2">Décomposition d\'un vecteur.</string>
+    <string name="msg3">Multiplication scalaire</string>
+    <string name="msg4">Multiplication de vecteur.</string>
+    <string name="msg5">Multiplication mixte.</string>
+    <string name="msg6">Multiplication / division par scalaire.</string>
+    <string name="msg7">Distance entre les vecteurs.</string>
+    <string name="msg8">L\'angle entre le vecteur et les axes x, y, z.</string>
+
+    <string name="instructionNumbers">
+        Le clavier numérique principal.
+    </string>
+    <string name="instructionsPoint">
+        Délimiteur pour entrer dans la partie fractionnaire.
+    </string>
+    <string name="instructionCaret">
+        Séparateur pour entrer la valeur de l\'angle (phase) du vecteur.\n
+        Par exemple: 10.123 ^ 45.123
+    </string>
+    <string name="instructionPlusMinus">
+        Opérateurs pour calculer la somme (différence) de vecteurs.\n
+        L\'entrée du nombre de vecteurs est illimitée.\n
+        Par exemple: 10.123 ^ 10.123 + 10.123 ^ 10.123 = 20.2460 ^ 10.1230
+    </string>
+    <string name="instructionVectorMultiple">
+        L\'opérateur de calcul de la multiplication vectorielle.\n
+        Seuls 2 vecteurs sont entrés dans l\'opération.\n
+        La réponse est égale à la surface du parallélogramme construit sur les vecteurs introduits.\n
+        Par exemple: 10 ^ 10X10 ^ 60 = -76.6044.
+    </string>
+    <string name="instructionDevOnScalar">
+        L\'opérateur pour calculer la division d\'un vecteur en un scalaire.\n
+        Par exemple: 10 ^ 10/2 = 5 ^ 10.
+    </string>
+    <string name="instructionScalarMultiple">
+        L\'opérateur pour calculer la multiplication scalaire des vecteurs.n
+        Seuls 2 vecteurs sont entrés dans l\'opération.\n
+        Par exemple: 10 ^ 10 * 10 ^ 60 = 64.2788.\n
+        Il est possible de multiplier un vecteur par un scalaire.\n
+        Par exemple: 10 ^ 10 * 10 = 100 ^ 10.
+    </string>
+    <string name="instruction_decomposition">
+        L\'opérateur de l\'expansion des vecteurs en 2 angles les plus proches.\n
+        c: a: b\n
+        c est le vecteur source;\n
+        a, b - vecteur, dont l\'amplitude sera calculée.\n
+        Par exemple: 1000 ^ 45: 85: 10\n
+        = 1000 ^ 45: 593.6957 ^ 85.0: 665.437 ^ 10.0.\n
+        Une erreur sur la colinéarité des vecteurs,\n
+        Si l\'angle entre les vecteurs a et b est de 180 degrés.
+    </string>
+    <string name="instructionFindDistance">
+        L\'opérateur de calcul de la distance entre les vecteurs.\n
+        Seuls 2 vecteurs sont entrés dans l\'opération.\n
+        Par exemple, 10 ^ 10dis30 ^ 50 = 23.2459.
+    </string>
+    <string name="instructionFindAngle">
+        L\'opérateur de calcul de l\'angle entre le vecteur et les axes des coordonnées X, Y, Z.\n
+        Dans l\'opération, seulement 1 vecteur est entré.\n
+        Le vecteur est entré au format (x; y; z).\n
+        Par exemple, angle (10; 34; 78) =\n
+        OX (83,3) OY (66,62) OZ (24,44).\n
+        La réponse est en degrés.\n
+    </string>
+    <string name="instructionGraph">
+        Ouvre l\'écran de planification.\n
+        Graphique de la somme (différence), décomposition des vecteurs.\n
+        Conçu pour la représentation visuelle des actions effectuées avec des vecteurs.\n
+        Les vecteurs sont affichés en échelle par rapport à la taille de l\'écran du smartphone.\n
+        Près de chaque vecteur, des informations sur le vecteur sont affichées sous la forme d\'un angle d\'amplitude.\n
+        Le nombre de vecteurs affichés est infini.
+    </string>
+    <string name="instruction_scobes">
+        Eléments supplémentaires de l\'expression d\'entrée.\n
+        Utilisé dans les fonctions suivantes:\n
+        1. Calcul de l\'angle;\n
+        2. Multiplication mixte:\n
+        (x;y;z)(x;y;z)(x;y;z);\n
+        Exemple:(10;23;78)(32;87;90)(54;98;12)\n
+        = -96648.0.\n
+        Le résultat de l\'expression introduite est le déterminant de la matrice 3x3:\n
+        10 23 78\n
+        32 87 90\n
+        54 98 12
+    </string>
+    <string name="instruction_semicolon">
+        Eléments supplémentaires de l\'expression d\'entrée.\n
+        Utilisé dans les fonctions suivantes:\n
+        1. Multiplication mixte;\n
+        2. Calcul de l\'angle;\n
+    </string>
+    <string name="instruction_cursor">
+        Contrôle du curseur dans la fenêtre de saisie d\'expression.\n
+        Vous pouvez sélectionner la position du curseur en cliquant sur le lieu d\'intérêt dans l\'expression.\n
+        L\'entrée est faite à gauche du curseur.
+    </string>
+    <string name="instruction_clear">
+        Nettoyage complet du champ de saisie.
+    </string>
+    <string name="instruction_del">
+        Supprimez le caractère à gauche du curseur.
+    </string>
+    <string name="instruction_memory_plus">
+        Ajouter (ajouter) le résultat du calcul au contenu de la mémoire.\n
+        Utilisé uniquement dans les opérations avec des données scalaires et des vecteurs.\n
+        Par exemple, dans la mémoire 10^10, seul un vecteur peut être ajouté à ce contenu de la mémoire sous la forme d\'un angle d\'amplitude.\n
+        Par exemple, dans la mémoire 10, seul un scalaire peut être ajouté à ce contenu de mémoire.
+    </string>
+    <string name="instruction_memory_minus">
+        Soustraction (différence) du résultat du calcul au contenu de la mémoire.\n
+        Utilisé uniquement dans les opérations avec des données scalaires et des vecteurs.\n
+        Par exemple, dans la mémoire 10^10, seul le vecteur sous la forme de l\'angle d\'amplitude^peut être soustrait de ce contenu de la mémoire.\n
+        Par exemple, dans la mémoire 10, seul le scalaire peut être soustrait de ce contenu de la mémoire.
+    </string>
+    <string name="instruction_memory_clean">
+        Effacer le contenu de la mémoire.
+    </string>
+    <string name="instruction_memory_read">
+        Affiche le contenu de la mémoire dans la fenêtre de réponse.
+    </string>
+    <string name="instructionHistory">
+        Histoire des calculs.\n
+        Cliquez sur l\'élément d\'historique pour copier son contenu dans les fenêtres d\'entrée et de réponse.\n
+        Les données précédemment saisies dans la fenêtre d\'entrée et de réponse seront effacées et remplacées par les informations de l\'élément d\'historique.
+    </string>
+    <string name="msgNextInApp">
+        L\'application est constamment mise à jour et de nouvelles fonctions sont ajoutées.\n
+        Si vous avez des suggestions sur la façon de modifier l\'application, ou si vous trouvez une erreur dans le calcul,
+        veuillez rapporter dans les commentaires sur la page de demande.
+    </string>
+</resources>

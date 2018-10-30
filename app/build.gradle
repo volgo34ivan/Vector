@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    flavorDimensions "mode"
+    signingConfigs {
+        GooglePlayStart {
+            storeFile file('C:/AndroidStudioProjects/Ресурсы/vector_calkulator.jks')
+            keyAlias 'volgo34ivan'
+            keyPassword 'mPzDk19rT'
+            storePassword 'zXmP4pRd1'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "ivan.kravtsov.vector"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 10
+        versionName "1.09"
+        signingConfig signingConfigs.GooglePlayStart
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.GooglePlayStart
+        }
+        debug {
+            signingConfig signingConfigs.GooglePlayStart
+            proguardFile 'C:/AndroidStudioProjects/Ресурсы/vector_calkulator.jks'        }
+    }
+    productFlavors {
+        demo {
+            dimension "mode"
+            //applicationIdSuffix ".demo"
+            //versionNameSuffix "-demo"
+            minSdkVersion 17
+            applicationId 'ivan.kravtsov.vector'
+            signingConfig signingConfigs.GooglePlayStart
+            targetSdkVersion 26
+            versionCode 10
+            versionName '1.09'
+        }
+        full {
+            dimension "mode"
+            //applicationIdSuffix ".full"
+            //versionNameSuffix "-full"
+            minSdkVersion 17
+            applicationId 'ivan.kravtsov.vector'
+            signingConfig signingConfigs.GooglePlayStart
+            targetSdkVersion 26
+            versionCode 10
+            versionName '1.09'
+            proguardFile 'C:/AndroidStudioProjects/Ресурсы/vector_calkulator.jks'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    //noinspection GradleCompatible,GradleCompatible
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+}

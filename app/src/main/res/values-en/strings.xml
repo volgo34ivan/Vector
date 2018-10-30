@@ -1,0 +1,142 @@
+<resources>
+    <string name="AppName">Vector calculator</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7928726493812110/9219867188</string>
+    <string name="test_banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="answer_window_faq">Enter an expression.</string>
+    <string name="answer_window_faq_memory">The memory is empty.</string>
+    <string name="answer_window_error">Parameters are not valid!</string>
+    <string name="history_title">HISTORY</string>
+    <string name="history_answer">answer</string>
+    <string name="history_input">input</string>
+    <string name="history_date">date</string>
+    <string name="idString">idString</string>
+    <string name="idInteger">idInteger</string>
+    <string name="clear_historyTitle">Clear all.</string>
+
+    <string name="msg1">Addition / subtraction.</string>
+    <string name="msg2">Decomposition of a vector.</string>
+    <string name="msg3">Scalar multiplication.</string>
+    <string name="msg4">Vector multiplication.</string>
+    <string name="msg5">Mixed multiplication.</string>
+    <string name="msg6">Multiplication / division by scalar.</string>
+    <string name="msg7">Distance between vectors.</string>
+    <string name="msg8">The angle between the vector and the x, y, z axes.</string>
+
+    <string name="instructionNumbers">The main numeric keypad.</string>
+    <string name="instructionsPoint">Delimiter for entering the fractional part.</string>
+    <string name="instructionCaret">
+        Separator for entering the value of the angle (phase) of the vector.\n
+        For example: 10.123 ^ 45.123
+    </string>
+    <string name="instructionPlusMinus">
+        Operators for calculating the sum (difference) of vectors.\n
+        The input of the number of vectors is unlimited.\n
+        For example: 10.123 ^ 10.123 + 10.123 ^ 10.123 = 20.2460 ^ 10.1230
+    </string>
+    <string name="instructionVectorMultiple">
+        The operator for computing vector multiplication.\n
+        Only 2 vectors are entered in the operation.\n
+        The answer is equal to the area of the parallelogram constructed on the introduced vectors.\n
+        For example: 10 ^ 10X10 ^ 60 = -76.6044.
+    </string>
+    <string name="instructionDevOnScalar">
+        The operator for computing the division of a vector into a scalar.\n
+        For example: 10 ^ 10/2 = 5 ^ 10.
+    </string>
+    <string name="instructionScalarMultiple">
+        The operator for computing scalar multiplication of vectors.\n
+        Only 2 vectors are entered in the operation.\n
+        For example: 10 ^ 10 * 10 ^ 60 = 64.2788.\n
+        It is possible to multiply a vector by a scalar.\n
+        For example: 10 ^ 10 * 10 = 100 ^ 10.
+    </string>
+    <string name="instruction_decomposition">
+        The operator of the expansion of vectors into 2 nearest angles.\n
+        c: a: b \n
+        c is the source vector;\n
+        a, b - vector, the amplitude of which will be calculated.\n
+        For example: 1000 ^ 45: 85: 10 \n
+        = 1000 ^ 45: 593.6957 ^ 85.0: 665.437 ^ 10.0.\n
+        An error about the collinearity of vectors,\n
+        If the angle between the vectors a and b is 180 degrees.
+    </string>
+    <string name="instructionFindDistance">
+        The operator of calculating the distance between vectors.\n
+        Only 2 vectors are entered in the operation.\n
+        For example, 10 ^ 10dis30 ^ 50 = 23.2459.
+    </string>
+    <string name="instructionFindAngle">
+        The operator of calculating the angle between the vector and the axes of the coordinates X, Y, Z.\n
+        In the operation, only 1 vector is entered.\n
+        The vector is entered in the format (x; y; z).\n
+        For example, angle (10; 34; 78) = \n
+        OX (83.3) OY (66.62) OZ (24.44).\n
+        The answer is in degrees.\n
+    </string>
+    <string name="instructionGraph">
+        Opens the schedule screen.\n
+        Graph of the sum (difference), decomposition of vectors.\n
+        It is intended for visual representation of the performed actions with vectors\n
+        Vectors are displayed in scale relative to the screen size of the telephone.\n
+        Near each vector, information about the vector is displayed in the form of an amplitude ^ angle.\n
+        The number of displayed vectors is infinite.
+    </string>
+    <string name="instruction_scobes">
+        Additional elements of the input expression.\n
+        Used in the following functions:\n
+        1. Calculation of the angle;\n
+        2. Mixed multiplication:\n
+        (x;y;z)(x;y;z)(x;y;z);\n
+        Example:(10;23;78)(32;87;90)(54;98;12)\n
+        = -96648.0.\n
+        The result of the introduced expression is the determinant of the matrix 3x3:\n
+        10 23 78\n
+        32 87 90\n
+        54 98 12
+    </string>
+    <string name="instruction_semicolon">
+        Additional elements of the input expression.\n
+        Used in the following functions:\n
+        1. Mixed multiplication;\n
+        2. Calculation of the angle;\n
+    </string>
+    <string name="instruction_cursor">
+        Cursor control in the expression input window.\n
+        You can select the position of the cursor by clicking on the place of interest in the expression.\n
+        The input is made to the left of the cursor.
+    </string>
+    <string name="instruction_clear">
+        Complete cleaning of the input field.
+    </string>
+    <string name="instruction_del">
+        Delete the character to the left of the cursor.
+    </string>
+    <string name="instruction_memory_plus">
+        Adding the calculation result to the contents of the memory. \n
+        It is used only in operations with scalar data and vectors. \n
+        For example, in memory 10 ^ 10, only a vector can be added to the given memory content in the form of an amplitude ^ angle. \n
+        For example, in memory 10, only a scalar can be added to this memory content.
+    </string>
+    <string name="instruction_memory_minus">
+        Subtraction (difference) of the calculation result to the contents of memory.\n
+        It is used only in operations with scalar data and vectors.\n
+        For example, in memory 10 ^ 10, only the vector in the form of the amplitude ^ angle can be subtracted from this memory content. \n
+        For example, in memory 10, only the scalar can be subtracted from this memory content.
+    </string>
+    <string name="instruction_memory_clean">
+        Clearing the contents of memory.
+    </string>
+    <string name="instruction_memory_read">
+        Output the contents of memory in the response window.
+    </string>
+    <string name="instructionHistory">
+        History of calculations. \n
+        Clicking on the history item will copy its contents to the input and response windows. \n
+        The previously entered data in the input and response window will be erased and replaced with the history item information.
+    </string>
+    <string name="msgNextInApp">
+        The application is constantly being updated and new functions are added. \n
+        If you have any suggestions on how to modify the application, or if you find an error in the calculation,
+        please report in the comments on the application page.
+    </string>
+</resources>

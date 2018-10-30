@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "956402132727",
+    "project_id": "vector-e000c"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956402132727:android:22c0c08525051e09",
+        "android_client_info": {
+          "package_name": "ivan.kravtsov.vector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956402132727-laa7bbk95s7es3rh32pfnq2l71ohjqm9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ivan.kravtsov.vector",
+            "certificate_hash": "ea16abacc4a2b990c66a0834d08b5fe7f9e7f687"
+          }
+        },
+        {
+          "client_id": "956402132727-882cr2ae7ck9d9036cgsmb5uk46iuh4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGl1AH5uiXkOS99XwBgwIC1s3kE_4Rwz0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

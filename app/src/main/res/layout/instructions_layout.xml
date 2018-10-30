@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_blue"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/numbers"
+            android:padding="5dp"
+            android:text="@string/instructionNumbers"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_point"
+            android:padding="5dp"
+            android:text="@string/instructionsPoint"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_caret"
+            android:padding="5dp"
+            android:text="@string/instructionCaret"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/plmns"
+            android:padding="5dp"
+            android:text="@string/instructionPlusMinus"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_x"
+            android:padding="5dp"
+            android:text="@string/instructionVectorMultiple"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_slash"
+            android:padding="5dp"
+            android:text="@string/instructionDevOnScalar"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_circle"
+            android:padding="5dp"
+            android:text="@string/instructionScalarMultiple"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_colon"
+            android:padding="5dp"
+            android:text="@string/instruction_decomposition"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_arrows"
+            android:padding="5dp"
+            android:text="@string/instructionFindDistance"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_angle"
+            android:padding="5dp"
+            android:text="@string/instructionFindAngle"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_graph"
+            android:padding="5dp"
+            android:text="@string/instructionGraph"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/lr"
+            android:padding="5dp"
+            android:text="@string/instruction_scobes"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_semicolon"
+            android:padding="5dp"
+            android:text="@string/instruction_semicolon"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/cursor"
+            android:padding="5dp"
+            android:text="@string/instruction_cursor"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_c"
+            android:padding="5dp"
+            android:text="@string/instruction_clear"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_d"
+            android:padding="5dp"
+            android:text="@string/instruction_del"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_memory_plus"
+            android:padding="5dp"
+            android:text="@string/instruction_memory_plus"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_memory_minus"
+            android:padding="5dp"
+            android:text="@string/instruction_memory_minus"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_memory_clean"
+            android:padding="5dp"
+            android:text="@string/instruction_memory_clean"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_memory_read"
+            android:padding="5dp"
+            android:text="@string/instruction_memory_read"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_histrory"
+            android:padding="5dp"
+            android:text="@string/instructionHistory"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_next"
+            android:padding="5dp"
+            android:text="@string/msgNextInApp"
+            android:textColor="@color/color_white"
+            android:textStyle="italic" />
+    </LinearLayout>
+</ScrollView>
+
+

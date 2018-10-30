@@ -1,0 +1,142 @@
+<resources>
+    <string name="AppName">Vektorrechner</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7928726493812110/9219867188</string>
+    <string name="test_banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="answer_window_faq">Geben Sie einen Ausdruck ein.</string>
+    <string name="answer_window_faq_memory">Der Speicher ist leer.</string>
+    <string name="answer_window_error">Parameter sind nicht gültig!</string>
+    <string name="history_title">GESCHICHTE</string>
+    <string name="history_answer">answer</string>
+    <string name="history_input">input</string>
+    <string name="history_date">date</string>
+    <string name="idString">idString</string>
+    <string name="idInteger">idInteger</string>
+    <string name="clear_historyTitle">Alles löschen.</string>
+
+    <string name="msg1">Addition / Subtraktion.</string>
+    <string name="msg2">Zersetzung eines Vektors.</string>
+    <string name="msg3">Skalare Multiplikation.</string>
+    <string name="msg4">Vektor-Multiplikation.</string>
+    <string name="msg5">Gemischte Multiplikation.</string>
+    <string name="msg6">Multiplikation / Division durch Skalar.</string>
+    <string name="msg7">Abstand zwischen Vektoren.</string>
+    <string name="msg8">Der Winkel zwischen dem Vektor und den Achsen x, y, z.</string>
+
+    <string name="instructionNumbers">Der Haupt-Ziffernblock.</string>
+    <string name="instructionsPoint">Trennzeichen für die Eingabe des Bruchteils.</string>
+    <string name="instructionCaret">
+        Trennzeichen für die Eingabe des Winkels (Phase) des Vektors.\n
+        Zum Beispiel: 10.123 ^ 45.123
+    </string>
+    <string name="instructionPlusMinus">
+        Operatoren zur Berechnung der Summe (Differenz) von Vektoren.\n
+        Die Eingabe der Anzahl der Vektoren ist unbegrenzt.\n
+        Zum Beispiel: 10.123 ^ 10.123 + 10.123 ^ 10.123 = 20.2460 ^ 10.1230
+    </string>
+    <string name="instructionVectorMultiple">
+        Der Operator zum Berechnen der Vektormultiplikation.\n
+        In der Operation werden nur 2 Vektoren eingegeben.\n
+        Die Antwort ist gleich dem Bereich des Parallelogramms, das auf den eingeführten Vektoren konstruiert wurde.\n
+        Zum Beispiel: 10 ^ 10X10 ^ 60 = -76.6044.
+    </string>
+    <string name="instructionDevOnScalar">
+        Der Operator zum Berechnen der Teilung eines Vektors in einen Skalar.\n
+        Zum Beispiel: 10 ^ 10/2 = 5 ^ 10.
+    </string>
+    <string name="instructionScalarMultiple">
+        Der Operator für die Berechnung der Skalarmultiplikation von Vektoren.\n
+        In der Operation werden nur 2 Vektoren eingegeben.\n
+        Zum Beispiel: 10 ^ 10 * 10 ^ 60 = 64.2788.\n
+        Es ist möglich, einen Vektor mit einem Skalar zu multiplizieren.\n
+        Zum Beispiel: 10 ^ 10 * 10 = 100 ^ 10.
+    </string>
+    <string name="instruction_decomposition">
+        Der Operator der Expansion von Vektoren in 2 nächste Winkel.\n
+        c: a: b\n
+        c ist der Quellvektor;\n
+        a, b - Vektor, dessen Amplitude berechnet wird.\n
+        Zum Beispiel: 1000 ^ 45: 85: 10\n
+        = 1000 ^ 45: 593,6957 ^ 85,0: 665,437 ^ 10,0.\n
+        Ein Fehler bezüglich der Kollinearität von Vektoren,\n
+        Wenn der Winkel zwischen den Vektoren a und b 180 Grad beträgt.
+    </string>
+    <string name="instructionFindDistance">
+        Der Operator, der den Abstand zwischen Vektoren berechnet.\n
+        In der Operation werden nur 2 Vektoren eingegeben.\n
+        Zum Beispiel 10 ^ 10dis30 ^ 50 = 23,2459.
+    </string>
+    <string name="instructionFindAngle">
+        Der Operator der Berechnung des Winkels zwischen dem Vektor und den Achsen der Koordinaten X, Y, Z.\n
+        In der Operation wird nur 1 Vektor eingegeben.\n
+        Der Vektor wird im Format (x; y; z) eingegeben.\n
+        Zum Beispiel, Winkel (10; 34; 78) = \n
+        OX (83,3) OY (66,62) OZ (24,44).\n
+        Die Antwort ist in Grad.\n
+    </string>
+    <string name="instructionGraph">
+        Öffnet den Zeitplan.\n
+        It is intended for visual representation of the performed actions with vectors\n
+        Graph der Summe (Differenz), Zerlegung von Vektoren.\n
+        Vektoren werden im Maßstab relativ zur Bildschirmgröße des Telefons angezeigt.\n
+        In der Nähe jedes Vektors werden Informationen über den Vektor in Form eines Amplitudenwinkels angezeigt.\n
+        Die Anzahl der angezeigten Vektoren ist unendlich.
+    </string>
+    <string name="instruction_scobes">
+        Zusätzliche Elemente des Eingabeausdrucks.\n
+        Wird in den folgenden Funktionen verwendet:\n
+        1. Berechnung des Winkels;\n
+        2. Gemischte Multiplikation:\n
+        (x; y; z) (x; y; z) (x; y; z);\n
+        Beispiel: (10; 23; 78) (32; 87; 90) (54; 98; 12)\n
+        = -96648.0.\n
+        Das Ergebnis des eingeführten Ausdrucks ist die Determinante der Matrix 3x3:\n
+        10 23 78\n
+        32 87 90\n
+        54 98 12
+    </string>
+    <string name="instruction_semicolon">
+        Zusätzliche Elemente des Eingabeausdrucks.\n
+        Wird in den folgenden Funktionen verwendet:\n
+        1. Gemischte Multiplikation;\n
+        2. Berechnung des Winkels;\n
+    </string>
+    <string name="instruction_cursor">
+        Cursorsteuerung im Expression-Eingabefenster.\n
+        Sie können die Position des Cursors auswählen, indem Sie auf die gewünschte Stelle im Ausdruck klicken.\n
+        Die Eingabe erfolgt links vom Cursor.
+    </string>
+    <string name="instruction_clear">
+        Komplette Reinigung des Eingabefeldes.
+    </string>
+    <string name="instruction_del">
+        Löschen Sie das Zeichen links vom Cursor.
+    </string>
+    <string name="instruction_memory_plus">
+        Hinzufügen des Berechnungsergebnisses zum Inhalt des Speichers.\n
+        Es wird nur in Operationen mit skalaren Daten und Vektoren verwendet.\n
+        Zum Beispiel kann in dem Speicher 10 ^ 10 nur ein Vektor zu dem gegebenen Speicherinhalt in der Form eines Amplitudenwinkels hinzugefügt werden.\n
+        Zum Beispiel kann im Speicher 10 nur ein Skalar zu diesem Speicherinhalt hinzugefügt werden.
+    </string>
+    <string name="instruction_memory_minus">
+        Subtraktion (Differenz) des Berechnungsergebnisses zum Inhalt des Speichers.\n
+        Es wird nur in Operationen mit skalaren Daten und Vektoren verwendet.\n
+        Zum Beispiel kann in dem Speicher 10 ^ 10 nur der Vektor in der Form des Amplitudenwinkels von diesem Speicherinhalt subtrahiert werden.\n
+        Zum Beispiel kann in dem Speicher 10 nur der Skalar von diesem Speicherinhalt subtrahiert werden.
+    </string>
+    <string name="instruction_memory_clean">
+        Löschen des Inhalts des Speichers
+    </string>
+    <string name="instruction_memory_read">
+        Geben Sie den Inhalt des Speichers im Antwortfenster aus.
+    </string>
+    <string name="instructionHistory">
+        Geschichte der Berechnungen.\n
+        Durch Klicken auf das Protokollelement wird der Inhalt in das Eingabe- und Antwortfenster kopiert.\n
+        Die zuvor eingegebenen Daten im Eingabe- und Antwortfenster werden gelöscht und durch die Informationen zum Verlaufselement ersetzt.
+    </string>
+    <string name="msgNextInApp">
+        Die Anwendung wird ständig aktualisiert und neue Funktionen hinzugefügt.\n
+        Wenn Sie Vorschläge zum Ändern der Anwendung haben oder einen Fehler in der Berechnung finden,
+        Bitte melde dich in den Kommentaren auf der Bewerbungsseite.
+    </string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#13163e"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/history_date"
+        android:textAlignment="viewStart"
+        android:textColor="@color/accent_material_dark" />
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/history_input"
+        android:textColor="@color/accent_material_dark" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/history_answer"
+        android:textColor="@color/accent_material_dark" />
+
+    <TextView
+        android:id="@+id/idString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/idString"
+        android:textColor="@color/accent_material_dark" />
+
+    <TextView
+        android:id="@+id/idNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/idInteger"
+        android:textColor="@color/accent_material_dark"
+        android:visibility="gone" />
+
+</LinearLayout>

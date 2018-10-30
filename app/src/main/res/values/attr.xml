@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="myfont" format="string" />
+    <declare-styleable name="com.example.foo.view.FontableTextView">
+        <attr name="myfont" />
+    </declare-styleable>
+    <declare-styleable name="com.example.foo.view.FontableEditTExt">
+        <attr name="myfont" />
+    </declare-styleable>
+</resources>
