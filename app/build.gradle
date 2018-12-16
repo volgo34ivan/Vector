@@ -11,13 +11,13 @@ android {
         }
     }
     compileSdkVersion 26
-    buildToolsVersion '27.0.3'
+    buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "ivan.kravtsov.vector"
         minSdkVersion 17
         targetSdkVersion 26
-        versionCode 10
-        versionName "1.09"
+        versionCode 11
+        versionName "1.10"
         signingConfig signingConfigs.GooglePlayStart
     }
     buildTypes {
@@ -39,8 +39,8 @@ android {
             applicationId 'ivan.kravtsov.vector'
             signingConfig signingConfigs.GooglePlayStart
             targetSdkVersion 26
-            versionCode 10
-            versionName '1.09'
+            versionCode 11
+            versionName '1.10'
         }
         full {
             dimension "mode"
@@ -50,18 +50,18 @@ android {
             applicationId 'ivan.kravtsov.vector'
             signingConfig signingConfigs.GooglePlayStart
             targetSdkVersion 26
-            versionCode 10
-            versionName '1.09'
+            versionCode 11
+            versionName '1.10'
             proguardFile 'C:/AndroidStudioProjects/Ресурсы/vector_calkulator.jks'
         }
     }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     //noinspection GradleCompatible
     //noinspection GradleCompatible,GradleCompatible
-    compile 'com.android.support:appcompat-v7:26.1.0'
-    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }

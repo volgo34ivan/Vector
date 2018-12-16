@@ -1,20 +1,13 @@
 package ivan.kravtsov.vector;
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Point;
 import android.graphics.drawable.Drawable;
-import android.media.AudioAttributes;
-import android.media.AudioManager;
-import android.media.SoundPool;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
@@ -31,7 +24,6 @@ import android.widget.LinearLayout;
 import android.widget.Scroller;
 import android.widget.TextView;
 import android.view.View.OnTouchListener;
-import android.widget.Toast;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -43,12 +35,8 @@ import java.util.Date;
 public class Keyboard extends AppCompatActivity implements OnTouchListener {
 
     private static Context context;
-    private SoundPool mSoundPool;
-    private AssetManager mAssetManager;
-    private int mButton; //не делать локальной переменной!!!
-    private int mStreamID = 0;
     static public boolean file = false;
-
+    private AssetManager mAssetManager;
     Button button1,button2,button3,button4,button5,button6; //строка 1
     Button button7,button8,button9,button0, buttonpoint,buttoncaret; //строка 2
     Button buttonplus,buttonminus,buttonx,buttonslash,buttoncircle,buttoncolon; //строка 3
@@ -406,32 +394,11 @@ public class Keyboard extends AppCompatActivity implements OnTouchListener {
         answer.setText(hint);
         answer.getLayoutParams().width = width;
         answer.setPadding(aroundBtn,aroundBtn,aroundBtn,aroundBtn);
-
-        if(this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
-            if(Settings.ENABLE_ADVERTISING.equals("OFF") & Settings.ENABLE_ADVERTISING_TEST.equals("OFF") ){
-                input.getLayoutParams().height = Math.round(3*(height-sizeBtn*3)/5);
-                answer.getLayoutParams().height = Math.round(2*(height-sizeBtn*3)/5);
-            }else{
-                input.getLayoutParams().height = Math.round(2*(height-sizeBtn*3)/5);
-                answer.getLayoutParams().height = Math.round(2*(height-sizeBtn*3)/5);
-            }
-        }else{
-            if(Settings.ENABLE_ADVERTISING.equals("OFF") & Settings.ENABLE_ADVERTISING_TEST.equals("OFF")){
-                input.getLayoutParams().height = Math.round(inputHeightPX*1.5f);
-                answer.getLayoutParams().height = answerHeightPX;
-            }else{
-                input.getLayoutParams().height = inputHeightPX;
-                answer.getLayoutParams().height = answerHeightPX;
-            }
-        }
     }
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
         switch (motionEvent.getAction()){
                 case MotionEvent.ACTION_UP:
-                    //mStreamID = playSound(mButton);
-                    if (mStreamID > 0){ mSoundPool.stop(mStreamID);}
-                    //playSound(mButton);
                     view.performClick();
                     Integer cursorStartLog = input.getSelectionStart();
                     Integer cursorEndLog = input.getSelectionEnd();
@@ -454,7 +421,6 @@ public class Keyboard extends AppCompatActivity implements OnTouchListener {
         }
             return true;
         }
-
     public static void disableSoftInputFromAppearing(EditText editText) {
         editText.setRawInputType(InputType.TYPE_CLASS_TEXT);
         editText.setTextIsSelectable(true);
@@ -1237,36 +1203,6 @@ public class Keyboard extends AppCompatActivity implements OnTouchListener {
         }
         return memory;
     }
-    public void generateNoteOnSD(Context context, String sFileName) {
-        try {
-            File root = new File(Environment.getExternalStorageDirectory(), "Vectors");
-            if (!root.exists()) {
-                root.mkdirs();
-            }
-            File gpxfile = new File(root, sFileName);
-            FileWriter writer = new FileWriter(gpxfile);
-            writer.flush();
-            writer.close();
-            Toast.makeText(context, "Создано на SD карте.", Toast.LENGTH_SHORT).show();
-        } catch (IOException e) {
-            generateNoteOnInternalStorage(this,"history_vectors.txt");
-        }
-    }
-    public void generateNoteOnInternalStorage(Context context, String sFileName) {
-        try {
-            File root = new File(context.getFilesDir(),"history_vectors.txt");
-            if (!root.exists()) {
-                root.mkdirs();
-            }
-            File gpxfile = new File(root, sFileName);
-            FileWriter writer = new FileWriter(gpxfile);
-            writer.flush();
-            writer.close();
-            Toast.makeText(context, "Создано на внутренней памяти.", Toast.LENGTH_SHORT).show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
     public void writieFileOnInternalStorage(Context context, String sBody){
         String yourFilePath = context.getFilesDir() + "history_vectors.txt";
         try{
@@ -1302,60 +1238,9 @@ public class Keyboard extends AppCompatActivity implements OnTouchListener {
             ioe.printStackTrace();
         }
     }
-
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    private void createNewSoundPool() {
-        AudioAttributes attributes = new AudioAttributes.Builder()
-                .setUsage(AudioAttributes.USAGE_GAME)
-                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
-                .build();
-        mSoundPool = new SoundPool.Builder()
-                .setAudioAttributes(attributes)
-                .build();
-    }
-    @SuppressWarnings("deprecation")
-    private void createOldSoundPool() {
-        mSoundPool = new SoundPool(3, AudioManager.STREAM_MUSIC, 0);
-    }
-    private int playSound(int sound) {
-        if (sound > 0) {
-            mStreamID = mSoundPool.play(sound, 1, 1, 1, 0, 1);
-        }
-        return mStreamID;
-    }
-    private int loadSound(String fileName) {
-        AssetFileDescriptor afd;
-        try {
-            afd = mAssetManager.openFd(fileName);
-        } catch (IOException e) {
-            e.printStackTrace();
-            Toast.makeText(getApplicationContext(), "Не могу загрузить файл " + fileName,
-                    Toast.LENGTH_SHORT).show();
-            return -1;
-        }
-        return mSoundPool.load(afd, 1);
-    }
     @Override
     protected void onResume() {
         super.onResume();
-
-        if (android.os.Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
-            // Для устройств до Android 5
-            createOldSoundPool();
-        } else {
-            // Для новых устройств
-            createNewSoundPool();
-        }
-
         mAssetManager = getAssets();
-
-        // получим идентификаторы
-        mButton= loadSound("sounds/u_click.ogg");
-    }
-    @Override
-    protected void onPause() {
-        super.onPause();
-        mSoundPool.release();
-        mSoundPool = null;
     }
 }

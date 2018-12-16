@@ -10,6 +10,5 @@ public class InstructionActivity extends Activity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.instructions_layout);
-        //setContentView(R.layout.example);
     }
 }

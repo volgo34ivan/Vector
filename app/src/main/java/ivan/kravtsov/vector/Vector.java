@@ -37,7 +37,7 @@ public class Vector {
     public void setAmplitude(Double d){
         Amplitude = d;
     }
-    public String getAmplAngle(){return AmplAngle;}
+    public String getVector(){return AmplAngle;}
     public Double getAngleRAD(){return AngleRAD;}
     public Double getAngleDEG(){return AngleDEG;}
     public Double getAmplitude(){return Amplitude;}
